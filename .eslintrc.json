@@ -1,0 +1,12 @@
+{
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "no-alert": "off",
+        "prettier/prettier": ["error"],
+        "keyword-spacing": [2, {"before": false, "after": false, "overrides": null}]
+    }
+}

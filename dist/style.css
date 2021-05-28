@@ -1,0 +1,152 @@
+:root {
+    --secondary-dark: #6870e0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Antic Slab", serif;
+    font-size: 2.4rem;
+}
+
+.header-title {
+    color: white;
+    padding: 15px 20px;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.input {
+    background: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: montserrat, sans-serif;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.btn-submit {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search-result {
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 4vh 1vh 0 4vh;
+    line-height: 0;
+    width: fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+.status img {
+    object-fit: cover;
+    height: 120px;
+}
+
+#temperature {
+    font-size: 15rem;
+}
+
+#temperature::after {
+    content: "°C";
+    font-size: 7rem;
+    line-height: 2;
+    vertical-align: top;
+}
+
+.temps {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-bottom: 5px solid white;
+}
+
+.tempsMaxMin {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border-left: 5px solid white;
+}
+
+.tempMaxMin {
+    font-size: 4rem;
+}
+
+.tempMaxMin::after {
+    content: "°C";
+    font-size: 2rem;
+    line-height: 2;
+    vertical-align: top;
+}
+
+#feelsLike::after {
+    content: "°C";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.other {
+    font-size: 2.5rem;
+    padding: 30px 10px 10px 10px;
+}
